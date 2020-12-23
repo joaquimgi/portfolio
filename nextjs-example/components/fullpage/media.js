@@ -441,7 +441,7 @@ export const Waves = withNavigationContext(({ fullpage }) => {
     <Page>
       <Section wrapper={false} backgroundColor="#2ab3bf">
         <VideoPlayer
-          source="/Waves.mp4"
+          source="https://res.cloudinary.com/depriwrjc/video/upload/v1608691632/portfolio/Waves_xrwfa2.mp4"
           live="https://joaquimgi.github.io/waves-music-app/"
           github="waves-music-app"
         />
