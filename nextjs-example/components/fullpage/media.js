@@ -130,7 +130,7 @@ export const Ignite = withNavigationContext(({ fullpage }) => {
     <Page>
       <Section wrapper={false} backgroundColor="#ff6f5e">
         <VideoPlayer
-          source="/Ignite.mp4"
+          source="https://res.cloudinary.com/depriwrjc/video/upload/v1608691627/portfolio/Ignite_nelyju.mp4"
           live="https://joaquimgi.github.io/ignite-webapp/"
           github="ignite-webapp"
         />
@@ -212,7 +212,7 @@ export const Capture = withNavigationContext(({ fullpage }) => {
     <Page>
       <Section wrapper={false} backgroundColor="#333333">
         <VideoPlayer
-          source="/Capture.mp4"
+          source="https://res.cloudinary.com/depriwrjc/video/upload/v1608691626/portfolio/Capture_tdeqek.mp4"
           live="https://joaquimgi.github.io/capture-webapp/"
           github="capture-webapp"
         />
@@ -292,7 +292,10 @@ export const Jengu = withNavigationContext(({ fullpage }) => {
   return (
     <Page>
       <Section wrapper={false} backgroundColor="#4158b4">
-        <VideoPlayer source="/Jengu.mp4" live="https://jengu.fr/" />
+        <VideoPlayer
+          source="https://res.cloudinary.com/depriwrjc/video/upload/v1608691636/portfolio/Jengu_tdk9xs.mp4"
+          live="https://jengu.fr/"
+        />
       </Section>
       <Section hero>
         <NavHelper background="#4158b4" />
@@ -363,7 +366,7 @@ export const Nasa = withNavigationContext(({ fullpage }) => {
     <Page>
       <Section wrapper={false} backgroundColor="#9bbff4">
         <VideoPlayer
-          source="/Nasa.mp4"
+          source="https://res.cloudinary.com/depriwrjc/video/upload/v1608691629/portfolio/Nasa_dou3ch.mp4"
           live="https://nasa-wildfire-tracker.netlify.app/"
           github="nasa-wildfire-tracker"
         />
@@ -505,7 +508,10 @@ export const Helios = withNavigationContext(({ fullpage }) => {
   return (
     <Page>
       <Section wrapper={false} backgroundColor="#f8cf76">
-        <VideoPlayer source="/Helios.mp4" live="https://ensemblehelios.com/" />
+        <VideoPlayer
+          source="https://res.cloudinary.com/depriwrjc/video/upload/v1608691896/portfolio/helios_dzsz37.mp4"
+          live="https://ensemblehelios.com/"
+        />
       </Section>
       <Section hero>
         <NavHelper background="#f8cf76" />
