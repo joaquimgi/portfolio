@@ -27,3 +27,123 @@
   text-align: center;
   color: #fff;
 }
+
+/*Description pages css*/
+
+.description {
+  display: flex;
+  margin: 10rem;
+}
+
+.description-title {
+  margin-bottom: 2rem;
+  font-size: xxx-large;
+}
+
+.description-content {
+  margin-bottom: 5rem;
+  width: 35vw;
+}
+
+.paragraphe {
+  font-size: larger;
+  margin-bottom: 1rem;
+}
+
+.paragraphe-home {
+  font-size: larger;
+  margin-bottom: 2rem;
+}
+
+.heroSVG {
+  width: 40vw;
+}
+
+.homeSVG {
+  width: 40vw;
+}
+
+.logo1rem {
+  height: 5rem;
+  margin-right: 1rem;
+}
+
+.description-home {
+  display: flex;
+  margin: 10rem;
+  color: white;
+  margin-top: 20rem;
+}
+
+@media screen and (max-width: 1485px) {
+  .description {
+    margin: 5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .logo1rem {
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .logo1rem {
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .homeSVG {
+    display: none;
+  }
+
+  .description-home {
+    margin: 0rem;
+    margin-top: 8rem;
+  }
+
+  .description-content {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .description-title {
+    margin-bottom: 1.5rem;
+    font-size: xx-large;
+  }
+
+  .paragraphe-home {
+    font-size: large;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .description {
+    margin: 3rem;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .description {
+    margin: 2rem;
+  }
+
+  .heroSVG {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .description-title {
+    margin-bottom: 1rem;
+    font-size: xx-large;
+  }
+
+  .paragraphe-home {
+    font-size: small;
+    margin-bottom: 1rem;
+  }
+}

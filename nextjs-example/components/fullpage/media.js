@@ -33,44 +33,30 @@ const variants = {
 export const Home = withNavigationContext(({ fullpage }) => {
   return (
     <Section wrapper={false} backgroundColor="#292c35">
-      <div
-        style={{
-          display: "flex",
-          margin: "10rem",
-          color: "white",
-          marginTop: "20rem",
-        }}
-      >
+      <div className="description-home">
         <div>
-          <h1 style={{ marginBottom: "2rem", fontSize: "xxx-large" }}>
-            Hey ! I'm Joaquim
-          </h1>
-          <div style={{ marginBottom: "5rem", width: "35vw" }}>
-            <p
-              style={{
-                fontSize: "larger",
-                marginBottom: "2rem",
-              }}
-            >
+          <h1 className="description-title">Hi ! I'm Joaquim</h1>
+          <div className="description-content">
+            <p className="paragraphe-home">
               A 23 years old IoT engineering student with a passion for web
               development and web design.
             </p>
-            <p style={{ fontSize: "larger", marginBottom: "2rem" }}>
+            <p className="paragraphe-home">
               I'm currently looking for an internship as a Frontend or Fullstack
               Developer.
             </p>
-            <p style={{ fontSize: "larger", marginBottom: "2rem" }}>
+            <p className="paragraphe-home">
               In the mean time, I'm roaming the internet to better and deepen my
               skills about React, my favorite Frontend Framework and other cool
               technologies.
             </p>
-            <p style={{ fontSize: "larger", marginBottom: "2rem" }}>
+            <p className="paragraphe-home">
               In this portfolio, you'll find projects I've done during Covid-19
               as a Freelance Developer, personal projects and some projects I've
               done and improved, following online classes, tutorials and
               articles to better my skillset as a Developer.
             </p>
-            <p style={{ fontSize: "larger", marginBottom: "2rem" }}>
+            <p className="paragraphe-home">
               Here is{" "}
               <a
                 href="/cv.pdf"
@@ -81,16 +67,14 @@ export const Home = withNavigationContext(({ fullpage }) => {
                 my C.V.{" "}
               </a>
             </p>
-            <p style={{ fontSize: "larger", marginBottom: "2rem" }}>
+            <p className="paragraphe-home">
               You can contact me at joaquim.imhaus@gmail.com for inquieries or
               to work together !
             </p>
-            <p style={{ fontSize: "larger", marginBottom: "2rem" }}>
-              Have a nice day and happy visit !
-            </p>
+            <p className="paragraphe-home">Have a nice day and happy visit !</p>
           </div>
         </div>
-        <img src="/joaquim.svg" alt="Joaquim" style={{ width: "40vw" }} />
+        <img src="/joaquim.svg" alt="Joaquim" className="homeSVG" />
       </div>
     </Section>
   );
@@ -137,27 +121,20 @@ export const Ignite = withNavigationContext(({ fullpage }) => {
       </Section>
       <Section hero>
         <NavHelper background="#ff6f5e" />
-        <div style={{ display: "flex", margin: "10rem" }}>
+        <div className="description">
           <div>
-            <h1 style={{ marginBottom: "2rem", fontSize: "xxx-large" }}>
-              Ignite
-            </h1>
+            <h1 className="description-title">Ignite</h1>
             <div style={{ marginBottom: "5rem" }}>
-              <p
-                style={{
-                  fontSize: "larger",
-                  marginBottom: "1rem",
-                }}
-              >
+              <p className="paragraphe">
                 This is one of the projects I've made to re-discover Redux and
                 further my knowledge about Styled Components and Framer Motion.
               </p>
-              <p style={{ fontSize: "larger", marginBottom: "1rem" }}>
+              <p className="paragraphe">
                 This is a webapp displaying Upcoming, Popular and New games and
                 enables Game searching with the Rawgio API.
               </p>
             </div>
-            <h3>Techno used :</h3>
+            <h3>Technologies used :</h3>
             <motion.div
               variants={lineAnim60}
               animate={controls}
@@ -177,7 +154,7 @@ export const Ignite = withNavigationContext(({ fullpage }) => {
               <motion.img
                 src="/react.png"
                 alt="react-logo"
-                style={{ height: "5rem", marginRight: "1rem" }}
+                className="logo1rem"
                 initial="hidden"
                 animate="visible"
                 variants={variants}
@@ -199,7 +176,7 @@ export const Ignite = withNavigationContext(({ fullpage }) => {
               />
             </motion.div>
           </div>
-          <img src="/ignite.svg" alt="Ignite" style={{ width: "40vw" }} />
+          <img src="/ignite.svg" alt="Ignite" className="heroSVG" />
         </div>
       </Section>
     </Page>
@@ -219,31 +196,24 @@ export const Capture = withNavigationContext(({ fullpage }) => {
       </Section>
       <Section hero>
         <NavHelper background="#333333" />
-        <div style={{ display: "flex", margin: "10rem" }}>
+        <div className="description">
           <div>
-            <h1 style={{ marginBottom: "2rem", fontSize: "xxx-large" }}>
-              Capture
-            </h1>
+            <h1 className="description-title">Capture</h1>
             <div style={{ marginBottom: "5rem" }}>
-              <p
-                style={{
-                  fontSize: "larger",
-                  marginBottom: "1rem",
-                }}
-              >
+              <p className="paragraphe">
                 This is one of the projects I've made to learn about the use of
                 Styled Components and Framer Motion animations.
               </p>
-              <p style={{ fontSize: "larger", marginBottom: "1rem" }}>
+              <p className="paragraphe">
                 I've been impressed by how intuitive and how easy both packages
                 are to integrate and will continue using them in the future for
                 sure.
               </p>
-              <p style={{ fontSize: "larger", marginBottom: "1rem" }}>
+              <p className="paragraphe">
                 This is a landing page about an imaginary Filmmaking Company.
               </p>
             </div>
-            <h3>Techno used :</h3>
+            <h3>Technologies used :</h3>
             <motion.div
               variants={lineAnim}
               animate={controls}
@@ -263,7 +233,7 @@ export const Capture = withNavigationContext(({ fullpage }) => {
               <motion.img
                 src="/react.png"
                 alt="react-logo"
-                style={{ height: "5rem", marginRight: "1rem" }}
+                className="logo1rem"
                 initial="hidden"
                 animate="visible"
                 variants={variants}
@@ -280,7 +250,7 @@ export const Capture = withNavigationContext(({ fullpage }) => {
               />
             </motion.div>
           </div>
-          <img src="/capture.svg" alt="Capture" style={{ width: "40vw" }} />
+          <img src="/capture.svg" alt="Capture" className="heroSVG" />
         </div>
       </Section>
     </Page>
@@ -299,29 +269,22 @@ export const Jengu = withNavigationContext(({ fullpage }) => {
       </Section>
       <Section hero>
         <NavHelper background="#4158b4" />
-        <div style={{ display: "flex", margin: "10rem" }}>
+        <div className="description">
           <div>
-            <h1 style={{ marginBottom: "2rem", fontSize: "xxx-large" }}>
-              Jengu
-            </h1>
+            <h1 className="description-title">Jengu</h1>
             <div style={{ marginBottom: "5rem" }}>
-              <p
-                style={{
-                  fontSize: "larger",
-                  marginBottom: "1rem",
-                }}
-              >
+              <p className="paragraphe">
                 This is a landing page I've made for a project on how to improve
                 pharmacy-related formation. Our project won the Jury's Coup de
                 Coeur Award.
               </p>
-              <p style={{ fontSize: "larger", marginBottom: "1rem" }}>
+              <p className="paragraphe">
                 It is made with React and using Firebase Fonctions to power the
                 contact form. I'm currently developping a Proof of Concept as a
                 side project.
               </p>
             </div>
-            <h3>Techno used :</h3>
+            <h3>Technologies used :</h3>
             <motion.div
               variants={lineAnim30}
               animate={controls}
@@ -341,7 +304,7 @@ export const Jengu = withNavigationContext(({ fullpage }) => {
               <motion.img
                 src="/react.png"
                 alt="react-logo"
-                style={{ height: "5rem", marginRight: "1rem" }}
+                className="logo1rem"
                 initial="hidden"
                 animate="visible"
                 variants={variants}
@@ -353,7 +316,7 @@ export const Jengu = withNavigationContext(({ fullpage }) => {
               />
             </motion.div>
           </div>
-          <img src="/jengu.svg" alt="Jengu" style={{ width: "40vw" }} />
+          <img src="/jengu.svg" alt="Jengu" className="heroSVG" />
         </div>
       </Section>
     </Page>
@@ -373,30 +336,23 @@ export const Nasa = withNavigationContext(({ fullpage }) => {
       </Section>
       <Section hero>
         <NavHelper background="#9bbff4" />
-        <div style={{ display: "flex", margin: "10rem" }}>
+        <div className="description">
           <div>
-            <h1 style={{ marginBottom: "2rem", fontSize: "xxx-large" }}>
-              Nasa EONET Tracker
-            </h1>
+            <h1 className="description-title">Nasa EONET Tracker</h1>
             <div style={{ marginBottom: "5rem" }}>
-              <p
-                style={{
-                  fontSize: "larger",
-                  marginBottom: "1rem",
-                }}
-              >
+              <p className="paragraphe">
                 This is one of the projects I've made to learn how to handle
                 Google Map with React because I'll use it in Jengu's Proof of
                 Concept and I think it's one of the important tool to be able to
                 integrate and work with.
               </p>
-              <p style={{ fontSize: "larger", marginBottom: "1rem" }}>
+              <p className="paragraphe">
                 It uses Nasa EONET API to get natural event datas and then
                 display a custom clickable marker on the map that displays the
                 related information.
               </p>
             </div>
-            <h3>Techno used :</h3>
+            <h3>Technologies used :</h3>
             <motion.div
               variants={lineAnim30}
               animate={controls}
@@ -416,7 +372,7 @@ export const Nasa = withNavigationContext(({ fullpage }) => {
               <motion.img
                 src="/react.png"
                 alt="react-logo"
-                style={{ height: "5rem", marginRight: "1rem" }}
+                className="logo1rem"
                 initial="hidden"
                 animate="visible"
                 variants={variants}
@@ -428,7 +384,7 @@ export const Nasa = withNavigationContext(({ fullpage }) => {
               />
             </motion.div>
           </div>
-          <img src="/nasa.svg" alt="Nasa" style={{ width: "40vw" }} />
+          <img src="/nasa.svg" alt="Nasa" className="heroSVG" />
         </div>
       </Section>
     </Page>
@@ -448,23 +404,16 @@ export const Waves = withNavigationContext(({ fullpage }) => {
       </Section>
       <Section hero>
         <NavHelper background="#2ab3bf" />
-        <div style={{ display: "flex", margin: "10rem" }}>
+        <div className="description">
           <div>
-            <h1 style={{ marginBottom: "2rem", fontSize: "xxx-large" }}>
-              Calming Waves
-            </h1>
+            <h1 className="description-title">Calming Waves</h1>
             <div style={{ marginBottom: "5rem" }}>
-              <p
-                style={{
-                  fontSize: "larger",
-                  marginBottom: "1rem",
-                }}
-              >
+              <p className="paragraphe">
                 This is a webapp with a cool custom mp4 player that I've made to
                 learn about Sass and Css animations.
               </p>
             </div>
-            <h3>Techno used :</h3>
+            <h3>Technologies used :</h3>
             <motion.div
               variants={lineAnim30}
               animate={controls}
@@ -484,7 +433,7 @@ export const Waves = withNavigationContext(({ fullpage }) => {
               <motion.img
                 src="/react.png"
                 alt="react-logo"
-                style={{ height: "5rem", marginRight: "1rem" }}
+                className="logo1rem"
                 initial="hidden"
                 animate="visible"
                 variants={variants}
@@ -496,7 +445,7 @@ export const Waves = withNavigationContext(({ fullpage }) => {
               />
             </motion.div>
           </div>
-          <img src="/waves.svg" alt="Calming Waves" style={{ width: "40vw" }} />
+          <img src="/waves.svg" alt="Calming Waves" className="heroSVG" />
         </div>
       </Section>
     </Page>
@@ -515,29 +464,22 @@ export const Helios = withNavigationContext(({ fullpage }) => {
       </Section>
       <Section hero>
         <NavHelper background="#f8cf76" />
-        <div style={{ display: "flex", margin: "10rem" }}>
+        <div className="description">
           <div>
-            <h1 style={{ marginBottom: "2rem", fontSize: "xxx-large" }}>
-              Helios
-            </h1>
+            <h1 className="description-title">Helios</h1>
             <div style={{ marginBottom: "5rem" }}>
-              <p
-                style={{
-                  fontSize: "larger",
-                  marginBottom: "1rem",
-                }}
-              >
+              <p className="paragraphe">
                 This is my first work as a freelance developer that I've made
                 alone from scratch. To go from an empty Figma mockup to an
                 online website was quite a learning experience.
               </p>
-              <p style={{ fontSize: "larger", marginBottom: "1rem" }}>
+              <p className="paragraphe">
                 It was my first time designing an entire UX/UI from the ground
                 up and was sometimes quite the challenge. I also faced
                 development problems alone with github issues, Stack Overflow
                 and web articles as my only helpers.
               </p>
-              <p style={{ fontSize: "larger", marginBottom: "1rem" }}>
+              <p className="paragraphe">
                 This is the landing page of L'Ensemble Helios, a music Quatuor
                 displaying their 30+ years of work, their prizes and the
                 concerts of the ongoing season. There is also a Backend made
@@ -545,7 +487,7 @@ export const Helios = withNavigationContext(({ fullpage }) => {
                 API on Heroku.
               </p>
             </div>
-            <h3>Techno used :</h3>
+            <h3>Technologies used :</h3>
             <motion.div
               variants={lineAnim80}
               animate={controls}
@@ -565,7 +507,7 @@ export const Helios = withNavigationContext(({ fullpage }) => {
               <motion.img
                 src="/react.png"
                 alt="react-logo"
-                style={{ height: "5rem", marginRight: "1rem" }}
+                className="logo1rem"
                 initial="hidden"
                 animate="visible"
                 variants={variants}
@@ -573,21 +515,21 @@ export const Helios = withNavigationContext(({ fullpage }) => {
               <motion.img
                 src="/express.png"
                 alt="express-logo"
-                style={{ height: "5rem", marginRight: "1rem" }}
+                className="logo1rem"
               />
               <motion.img
                 src="/mongodb.png"
                 alt="mongodb-logo"
-                style={{ height: "5rem", marginRight: "2rem" }}
+                className="logo1rem"
               />
               <motion.img
                 src="/node.png"
                 alt="node-logo"
-                style={{ height: "5rem", marginRight: "1rem" }}
+                className="logo1rem"
               />
             </motion.div>
           </div>
-          <img src="/helios.svg" alt="Helios" style={{ width: "40vw" }} />
+          <img src="/helios.svg" alt="Helios" className="heroSVG" />
         </div>
       </Section>
     </Page>
@@ -607,27 +549,27 @@ export const media = [
   },
   {
     slug: "Jengu",
-    className: "slide page-three",
+    className: "sectioned page-two",
     children: <Jengu />,
   },
   {
     slug: "Nasa",
-    className: "slide page-three",
+    className: "sectioned page-two",
     children: <Nasa />,
   },
   {
     slug: "Ignite",
-    className: "slide page-three",
+    className: "sectioned page-two",
     children: <Ignite />,
   },
   {
     slug: "Waves",
-    className: "slide page-three",
+    className: "sectioned page-two",
     children: <Waves />,
   },
   {
     slug: "Capture",
-    className: "slide page-three",
+    className: "sectioned page-three",
     children: <Capture />,
   },
 ];
